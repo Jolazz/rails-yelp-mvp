@@ -1,10 +1,12 @@
 <%= simple_form_for(@restaurant) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.label :phone_number %>
-  <%= f.text_field :phone_number %>
-  <%= f.input :category, collection: Restaurant::CATEGORIES %>
-  <%= f.submit %>
+  <div class="form--">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+    <%= f.input :category, collection: Restaurant::CATEGORIES, wrapper: false %>
+    <%= f.submit %>
+  </div>
 <% end %>
