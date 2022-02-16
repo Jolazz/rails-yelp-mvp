@@ -5,5 +5,5 @@ class Review < ApplicationRecord
   validates :content, presence: true
   validates :rating, presence: true,
                      numericality: { only_integer: true },
-                     inclusion: { in: RATING, message: 'The rating has to be between 0 and 5' }
+                     inclusion: { in: RATING, message: 'has to be between 0 and 5' }
 end
