@@ -11,3 +11,12 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  padding: 10px 20px;
+}
+.link {
+  border-top: 1px solid rgb(199, 199, 199);
+  padding-top: 20px;
+  margin-top: 20px;
+}
